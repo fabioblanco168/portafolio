@@ -102,13 +102,18 @@ section {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.barra-85, .barra-95, .barra-100 {
+.barra-65, .barra-70, .barra-80, .barra-85, .barra-95, .barra-100 {
   height: 5px;
   background-image: linear-gradient(to right, rgba(35, 49, 66, 0), #233142);
   position: absolute;
   left: 0px; }
 
-.divider-wrapper label {
+.experiencia-1, .experiencia-2, .experiencia-3 {
+  height: 5px;
+  background-color: #fd2e2e;
+  position: absolute; }
+
+.divider-wrapper label, .background-years label {
   display: inline-block;
   background-color: #fd2e2e;
   padding: 5px 8px;
@@ -131,8 +136,8 @@ nav {
   position: fixed;
   left: 0px;
   top: 10%;
-  height: 70vh;
-  width: 70px;
+  height: 65vh;
+  width: 65px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
@@ -154,7 +159,7 @@ nav {
       opacity: .7;
       display: none; }
     nav a i {
-      font-size: 1.6em; }
+      font-size: 1.5em; }
     nav a:first-child {
       border-radius: 0px 30px 0px 0px; }
     nav a:last-child {
@@ -185,6 +190,9 @@ header {
   height: 80vh;
   width: 100%; }
 
+strong {
+  font-weight: bold; }
+
 .parallax {
   background-image: url(../images/bg-portfolio.jpg); }
 
@@ -193,6 +201,10 @@ header {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center; }
+  .flex .wrap {
+    flex-flow: row wrap; }
+  .flex .between {
+    justify-content: space-between; }
 
 .brand {
   display: block;
@@ -224,11 +236,13 @@ section {
   margin-bottom: 10px; }
   section article, section aside {
     padding: 60px 40px; }
+  section aside {
+    min-width: 200px; }
   section article {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-    width: 760px; }
+    min-width: 790px; }
   section h1 {
     color: #fd2e2e;
     font-size: 3.5em;
@@ -246,9 +260,11 @@ section {
   line-height: 1.3em;
   color: #3d3e3f;
   font-weight: 400; }
+  .main-text small {
+    font-size: .8em; }
 
 .divider-info {
-  margin: 15px 0px; }
+  margin: 20px 0px; }
 
 .divider-wrapper {
   width: 400px;
@@ -258,6 +274,21 @@ section {
 .skills-text {
   width: 300px;
   display: inline-block; }
+
+.barra-65 {
+  width: 65%; }
+  .barra-65 + label {
+    left: 55%; }
+
+.barra-70 {
+  width: 70%; }
+  .barra-70 + label {
+    left: 60%; }
+
+.barra-80 {
+  width: 80%; }
+  .barra-80 + label {
+    left: 70%; }
 
 .barra-85 {
   width: 85%; }
@@ -273,5 +304,37 @@ section {
   width: 100%; }
   .barra-100 + label {
     left: 95%; }
+
+.background-years {
+  width: 100%;
+  height: 5px;
+  background-color: #fec6c6;
+  position: relative; }
+  .background-years label {
+    background-color: #233142;
+    bottom: 10px;
+    font-size: 1.1em;
+    font-weight: 300; }
+
+.experiencia-1 {
+  width: 50%;
+  left: 50%; }
+  .experiencia-1 + label {
+    left: 82%; }
+
+.experiencia-2 {
+  width: 32%;
+  left: 15%; }
+  .experiencia-2 + label {
+    left: 29%; }
+
+.experiencia-3 {
+  width: 15%;
+  left: 0%; }
+  .experiencia-3 + label {
+    left: -3%; }
+
+.number-years span {
+  font-size: 2em; }
 
 /*# sourceMappingURL=main.css.map */
