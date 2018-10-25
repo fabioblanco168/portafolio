@@ -1,42 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 @font-face {
   font-family: 'Glyphter';
   src: url("../assets/fonts/Glyphter.eot");
@@ -90,6 +53,43 @@ table {
 
 .icon-icon-4:before {
   content: '\004d'; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 section {
   max-width: 1024px;
@@ -201,18 +201,19 @@ strong {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center; }
-  .flex .wrap {
+  .flex.wrap {
     flex-flow: row wrap; }
-  .flex .between {
+  .flex.between {
     justify-content: space-between; }
 
 .brand {
   display: block;
   width: 300px;
   height: 416px;
-  position: relative;
-  top: 10%;
-  left: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-image: url(../images/brand.svg);
   background-size: contain; }
 
@@ -264,16 +265,18 @@ section {
     font-size: .8em; }
 
 .divider-info {
-  margin: 20px 0px; }
+  margin: 20px 0px;
+  width: 100%; }
 
 .divider-wrapper {
-  width: 400px;
+  width: 45%;
   position: relative;
   margin-left: 5px; }
 
 .skills-text {
-  width: 300px;
-  display: inline-block; }
+  width: 45%;
+  display: inline-block;
+  text-align: left; }
 
 .barra-65 {
   width: 65%; }
@@ -320,21 +323,85 @@ section {
   width: 50%;
   left: 50%; }
   .experiencia-1 + label {
-    left: 82%; }
+    left: 80%; }
 
 .experiencia-2 {
   width: 32%;
   left: 15%; }
   .experiencia-2 + label {
-    left: 29%; }
+    left: 27%; }
 
 .experiencia-3 {
   width: 15%;
   left: 0%; }
   .experiencia-3 + label {
-    left: -3%; }
+    left: -5%; }
+  .experiencia-3 + label {
+    left: 0%; }
 
 .number-years span {
   font-size: 2em; }
+
+.number-years span {
+  font-size: 2em; }
+
+@media (max-width: 760px) {
+  header {
+    height: 90vh; }
+
+  section article {
+    width: 100%;
+    min-width: initial;
+    box-sizing: border-box; }
+  section aside {
+    padding: 20px 40px; }
+    section aside h1, section aside h2 {
+      text-align: center; }
+  section .divider-wrapper {
+    width: 90%; }
+  section .main-text {
+    font-size: .9em;
+    line-height: 1.5em; }
+  section .skills-text {
+    width: 90%;
+    display: inline-block;
+    margin-bottom: 10px; }
+
+  .flex {
+    flex-flow: column nowrap;
+    padding: 15px 5px; }
+    .flex .flex {
+      padding: 15px 0px; }
+    .flex.between {
+      display: none; }
+    .flex.wrap {
+      padding: 5px 35px; }
+    .flex.redes {
+      flex-flow: row nowrap; }
+
+  .parallax {
+    height: 100%; }
+
+  .brand {
+    width: 252px;
+    height: 350px; }
+
+  .redes a i {
+    font-size: 16px; }
+
+  .background-years {
+    margin-top: 20px; }
+    .background-years label {
+      background-color: initial;
+      padding: initial;
+      color: #3d3e3f;
+      box-shadow: none;
+      bottom: 5px; }
+
+  .divider-info {
+    margin: 10px 0px; }
+
+  .remove-responsive {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
