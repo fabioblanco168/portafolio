@@ -132,6 +132,27 @@ body {
   background-image: url(../images/bg-body.png);
   background-repeat: repeat; }
 
+nav a:nth-of-type(1) {
+  background-color: #fd2e2e; }
+
+nav a:nth-of-type(2) {
+  background-color: #cf1b1b; }
+
+nav a:nth-of-type(3) {
+  background-color: #cf1b1b; }
+
+nav a:nth-of-type(4) {
+  background-color: #900d0d; }
+
+nav a:nth-of-type(5) {
+  background-color: #233142; }
+
+nav a:nth-of-type(6) {
+  background-color: #131f2b; }
+
+nav a:nth-of-type(7) {
+  background-color: #010103; }
+
 nav {
   position: fixed;
   left: 0px;
@@ -159,32 +180,17 @@ nav {
       opacity: .7;
       display: none; }
     nav a i {
-      font-size: 1.5em; }
-    nav a:first-child {
+      font-size: 1.1em; }
+    nav a:first-child, nav a.active:first-child {
       border-radius: 0px 30px 0px 0px; }
     nav a:last-child {
       border-radius: 0px 0px 30px 0px; }
-
-nav a:nth-of-type(1) {
-  background-color: #fd2e2e; }
-
-nav a:nth-of-type(2) {
-  background-color: #cf1b1b; }
-
-nav a:nth-of-type(3) {
-  background-color: #cf1b1b; }
-
-nav a:nth-of-type(4) {
-  background-color: #900d0d; }
-
-nav a:nth-of-type(5) {
-  background-color: #233142; }
-
-nav a:nth-of-type(6) {
-  background-color: #131f2b; }
-
-nav a:nth-of-type(7) {
-  background-color: #010103; }
+    nav a.active {
+      border-left: 10px solid white;
+      border-radius: 0px 5px 5px 0px;
+      width: 70px; }
+      nav a.active i {
+        font-size: 1.6em; }
 
 header {
   height: 80vh;
@@ -232,18 +238,22 @@ strong {
       line-height: 18px; }
 
 section {
-  padding: 15px 30px;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-  section article, section aside {
-    padding: 60px 40px; }
+  padding: 50px 50px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  section.first-section {
+    margin-top: 0px; }
   section aside {
+    padding: 60px 40px;
     min-width: 200px; }
+  section a {
+    padding: 10px 20px; }
   section article {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-    min-width: 790px; }
+    min-width: 790px;
+    padding: 100px 70px; }
   section h1 {
     color: #fd2e2e;
     font-size: 3.5em;
@@ -254,6 +264,9 @@ section {
     font-size: 1.5em;
     font-family: "Lato", sans-serif;
     text-align: right; }
+  section.redes {
+    margin: 5px;
+    padding: 5px; }
 
 .main-text {
   font-family: "Roboto", sans-serif;
