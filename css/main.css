@@ -186,9 +186,9 @@ nav {
     nav a:last-child {
       border-radius: 0px 0px 30px 0px; }
     nav a.active {
-      border-left: 10px solid white;
+      border-left: 8px solid white;
       border-radius: 0px 5px 5px 0px;
-      width: 70px; }
+      width: 65px; }
       nav a.active i {
         font-size: 1.6em; }
 
@@ -214,15 +214,29 @@ strong {
 
 .brand {
   display: block;
-  width: 300px;
-  height: 416px;
+  width: 320px;
+  height: 350px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url(../images/brand.svg);
-  background-size: contain; }
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: .7;
+  animation-duration: .6s;
+  animation-name: opacityIn;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in; }
 
+@keyframes opacityIn {
+  from {
+    opacity: .7;
+    left: 50%; }
+  to {
+    opacity: 1;
+    top: 51%; } }
 .redes {
   position: absolute;
   right: 0px; }
@@ -245,7 +259,8 @@ section {
     margin-top: 0px; }
   section aside {
     padding: 60px 40px;
-    min-width: 200px; }
+    min-width: 200px;
+    text-align: right; }
   section a {
     padding: 10px 20px; }
   section article {
@@ -255,7 +270,7 @@ section {
     min-width: 790px;
     padding: 100px 70px; }
   section h1 {
-    color: #fd2e2e;
+    color: #900d0d;
     font-size: 3.5em;
     font-family: "Lato", sans-serif;
     text-align: right; }
@@ -267,6 +282,17 @@ section {
   section.redes {
     margin: 5px;
     padding: 5px; }
+  section .icon-aside {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: #fd2e2e;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 54px;
+    margin-right: 10px;
+    border-radius: 3px; }
 
 .main-text {
   font-family: "Roboto", sans-serif;
@@ -358,14 +384,15 @@ section {
 .number-years span {
   font-size: 2em; }
 
-@media (max-width: 760px) {
+@media (max-width: 790px) {
   header {
     height: 90vh; }
 
   section article {
     width: 100%;
     min-width: initial;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    padding: 60px 40px; }
   section aside {
     padding: 20px 40px; }
     section aside h1, section aside h2 {
@@ -379,6 +406,14 @@ section {
     width: 90%;
     display: inline-block;
     margin-bottom: 10px; }
+  section .icon-aside {
+    display: block;
+    width: initial;
+    height: 45px;
+    color: #fd2e2e;
+    text-align: center;
+    font-size: 32px;
+    background-color: transparent; }
 
   .flex {
     flex-flow: column nowrap;
