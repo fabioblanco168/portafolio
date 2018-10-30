@@ -128,10 +128,6 @@ section {
 a {
   text-decoration: none; }
 
-body {
-  background-image: url(../images/bg-body.png);
-  background-repeat: repeat; }
-
 nav a:nth-of-type(1) {
   background-color: #fd2e2e; }
 
@@ -223,7 +219,7 @@ strong {
   background-image: url(../images/brand.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: .7;
+  opacity: .8;
   animation-duration: .6s;
   animation-name: opacityIn;
   animation-iteration-count: infinite;
@@ -232,7 +228,7 @@ strong {
 
 @keyframes opacityIn {
   from {
-    opacity: .7;
+    opacity: .8;
     left: 50%; }
   to {
     opacity: 1;
@@ -397,6 +393,8 @@ section {
     padding: 20px 40px; }
     section aside h1, section aside h2 {
       text-align: center; }
+    section aside h1 {
+      color: #fd2e2e; }
   section .divider-wrapper {
     width: 90%; }
   section .main-text {
@@ -407,13 +405,7 @@ section {
     display: inline-block;
     margin-bottom: 10px; }
   section .icon-aside {
-    display: block;
-    width: initial;
-    height: 45px;
-    color: #fd2e2e;
-    text-align: center;
-    font-size: 32px;
-    background-color: transparent; }
+    display: none; }
 
   .flex {
     flex-flow: column nowrap;
