@@ -15,44 +15,56 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-icon-6:before {
+.icon-icon-12:before {
   content: '\0041'; }
 
-.icon-icon-7:before {
+.icon-icon-13:before {
   content: '\0042'; }
 
-.icon-icon-8:before {
+.icon-icon-14:before {
   content: '\0043'; }
 
-.icon-icon-9:before {
+.icon-icon-15:before {
   content: '\0044'; }
 
-.icon-icon-10:before {
+.icon-icon-16:before {
   content: '\0045'; }
 
-.icon-icon-11:before {
+.icon-icon-17:before {
   content: '\0046'; }
 
-.icon-icon-5:before {
+.icon-icon-11:before {
   content: '\0047'; }
 
-.icon-icon-12:before {
+.icon-icon-1:before {
   content: '\0048'; }
 
-.icon-icon-13:before {
+.icon-icon-2:before {
   content: '\0049'; }
 
-.icon-icon-1:before {
+.icon-icon-3:before {
   content: '\004a'; }
 
-.icon-icon-2:before {
+.icon-icon-4:before {
   content: '\004b'; }
 
-.icon-icon-3:before {
+.icon-icon-5:before {
   content: '\004c'; }
 
-.icon-icon-4:before {
+.icon-icon-6:before {
   content: '\004d'; }
+
+.icon-icon-7:before {
+  content: '\004e'; }
+
+.icon-icon-8:before {
+  content: '\004f'; }
+
+.icon-icon-9:before {
+  content: '\0050'; }
+
+.icon-icon-10:before {
+  content: '\0051'; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -125,6 +137,9 @@ section {
   bottom: -5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
 
+body {
+  padding-bottom: 100px; }
+
 a {
   text-decoration: none; }
 
@@ -135,7 +150,7 @@ nav a:nth-of-type(2) {
   background-color: #cf1b1b; }
 
 nav a:nth-of-type(3) {
-  background-color: #cf1b1b; }
+  background-color: #b40a0a; }
 
 nav a:nth-of-type(4) {
   background-color: #900d0d; }
@@ -168,25 +183,29 @@ nav {
     height: 100%;
     width: 100%;
     color: white;
-    margin-bottom: 1px;
-    font-family: "Roboto", sans-serif; }
+    margin-bottom: 0px;
+    font-family: "Roboto", sans-serif;
+    transition: width .2s; }
     nav a small {
       font-size: .8em;
       text-align: center;
       opacity: .7;
       display: none; }
     nav a i {
-      font-size: 1.1em; }
-    nav a:first-child, nav a.active:first-child {
+      font-size: 1.1em;
+      transition: font-size .1s;
+      opacity: .6; }
+    nav a:first-child {
       border-radius: 0px 30px 0px 0px; }
     nav a:last-child {
       border-radius: 0px 0px 30px 0px; }
     nav a.active {
-      border-left: 8px solid white;
       border-radius: 0px 5px 5px 0px;
-      width: 65px; }
+      width: 80px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); }
       nav a.active i {
-        font-size: 1.6em; }
+        font-size: 2em;
+        opacity: 1; }
 
 header {
   height: 80vh;
@@ -232,7 +251,7 @@ strong {
     left: 50%; }
   to {
     opacity: 1;
-    top: 51%; } }
+    top: 52%; } }
 .redes {
   position: absolute;
   right: 0px; }
@@ -249,8 +268,8 @@ strong {
 
 section {
   padding: 50px 50px;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-top: 60px;
+  margin-bottom: 60px; }
   section.first-section {
     margin-top: 0px; }
   section aside {
@@ -379,6 +398,15 @@ section {
 
 .number-years span {
   font-size: 2em; }
+
+.links-proyectos a {
+  display: block;
+  color: #fd2e2e;
+  font-family: "Roboto", sans-serif;
+  margin: 3px 0px; }
+  .links-proyectos a:before {
+    content: "\0043";
+    font-family: "Glyphter"; }
 
 @media (max-width: 790px) {
   header {
