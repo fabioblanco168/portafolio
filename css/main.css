@@ -410,6 +410,32 @@ section {
     content: "\0043";
     font-family: "Glyphter"; }
 
+.swiper-container {
+  margin-top: 40px; }
+
+.swiper-wrapper {
+  margin-top: 40px; }
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #fd2e2e; }
+
+.swiper-pagination-progressbar {
+  background: #fec6c6; }
+
+.swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  width: 80%;
+  margin-left: 10%; }
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  background: url(../images/forward-arrow.svg); }
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  background: url(../images/back-arrow.svg); }
+
+.swiper-slide img {
+  width: 100%;
+  height: auto; }
+
 @media (max-width: 790px) {
   header {
     height: 90vh; }
@@ -476,6 +502,10 @@ section {
 
   .links-proyectos a:before {
     content: "";
-    font-family: "Glyphter"; } }
+    font-family: "Glyphter"; }
+
+  .swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 100%;
+    margin-left: 0%; } }
 
 /*# sourceMappingURL=main.css.map */
